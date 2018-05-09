@@ -8,6 +8,9 @@
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
+      <div class="page-content-titleblock">
+        <h1 class="page-content-title">{{ page.list_title | default: "Tutorials" }}</h1>
+      </div>
       <div class="wrapper">
         {{ content }}
       </div>

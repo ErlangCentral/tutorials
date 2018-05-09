@@ -1,8 +1,20 @@
 @charset "utf-8";
 
-// Define defaults for each variable.
+// Imports
+@font-face{
+  font-family: "NexaLight";
+  src: url("fonts/nexa-light.woff") format("woff");
+}
+@font-face{
+  font-family: "NexaBold";
+  src: url("fonts/nexa-bold.woff") format("woff");
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
 
-$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+// Define defaults for each variable.
+$base-font-family: "Open Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$secondary-font: "NexaBold";
+$secondary-font-light: "NexaLight";
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -13,9 +25,16 @@ $spacing-unit:     30px !default;
 $text-color:       #111 !default;
 $background-color: #fdfdfd !default;
 $brand-color:      #2a7ae2 !default;
+$yellow:           #F5A623;
+$purpleRed:        #701B39;
+$pink:             #D15675;
+$pinkDarker:       #BC3057;
+$white:            #F9F9F9;
+$nearWhite:        #F6F1F3;
+$black:            #1F0810;
 
 $grey-color:       #828282 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-light: #cbcbcb;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
 $table-text-align: left !default;
@@ -24,7 +43,7 @@ $table-text-align: left !default;
 $content-width:    800px !default;
 
 $on-palm:          600px !default;
-$on-laptop:        800px !default;
+$on-laptop:        767px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
