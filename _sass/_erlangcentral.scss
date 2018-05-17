@@ -3,11 +3,11 @@
 // Imports
 @font-face{
   font-family: "NexaLight";
-  src: url("fonts/nexa-light.woff") format("woff");
+  src: url("../fonts/nexa-light.woff") format("woff");
 }
 @font-face{
   font-family: "NexaBold";
-  src: url("fonts/nexa-bold.woff") format("woff");
+  src: url("../fonts/nexa-bold.woff") format("woff");
 }
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
 
@@ -62,9 +62,7 @@ $on-laptop:        767px !default;
   font-size: $base-font-size * $ratio;
 }
 
-// Import partials.
 @import
-  "minima/base",
-  "minima/layout",
-  "minima/syntax-highlighting"
+  "base",
+  "layout"
 ;
