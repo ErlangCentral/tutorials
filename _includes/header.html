@@ -4,10 +4,10 @@
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <div class="global-nav">
-        <a class="global-nav__link" href="{{ "/" | relative_url }}">
-          <img class="logo" src="/assets/images/logo.png">
+        <a class="global-nav__link" href="https://erlangcentral.org">
+          <img class="logo" src={{ "/assets/images/logo.png" | relative_url }}>
+          <span>{{ site.title | escape }}</span>
         </a>
-        <span>{{ site.title | escape }}</span>
     </div>
   </div>
 
